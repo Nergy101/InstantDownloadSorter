@@ -49,7 +49,7 @@ for path in all_paths:
             os.rename(path_to_search + path, path_to_search+f"Pictures\\{path}")
             photoAmount += 1
 
-        if path.__contains__(".pdf") or path.__contains__(".txt") or path.__contains__(".docx") or path.__contains__(".xlsx") or path.__contains__(
+        if path.__contains__(".md") or path.__contains__(".pdf") or path.__contains__(".txt") or path.__contains__(".docx") or path.__contains__(".xlsx") or path.__contains__(
                 ".pptx"):
             print(f"Relocating {path} to {path_to_search}"+f"Documents\\{path}")
             os.rename(path_to_search + path, path_to_search+f"Documents\\{path}")
