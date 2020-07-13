@@ -1,1 +1,1 @@
-python src/InstantSorter.py
+py src/InstantSorter.py
