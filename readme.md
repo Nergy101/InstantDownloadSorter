@@ -2,7 +2,6 @@
 
 Have Python 3 installed and available in PATH as either `py` or `python`.  
 go inside CMD at `/src` and:  
-- run the `setup.py` with python  
 - run `InstantSorter.py` with python  
 
 `settings.json` should have a valid configuration.
