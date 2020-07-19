@@ -1,17 +1,16 @@
 # How to run
 
-go inside CMD at `/src` and:
-- run the `setup.py`
-- run `InstantSorter.py`
+Have Python 3 installed and available in PATH as either `py` or `python`.  
+go inside CMD at `/src` and:  
+- run the `setup.py` with python  
+- run `InstantSorter.py` with python  
 
 `settings.json` should have a valid configuration.
 
 This is the default for windows:
 
-FolderLocation should be the path to the folder you want to sort.
-Folders is an array of objects with one key-value pair, where the key is a Foldername and the value a list of extensions
 ```json
-{"DownloadLocation": "C:\\Users\\<Username>\\Downloads\\",
+{"FolderLocation": "C:\\Users\\<Username>\\Downloads\\",
 "Folders":  [
   {"Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif"]},
   {"Documents":  [".md",".pdf",".txt",".docx", ".xlsx", ".pptx"]},
@@ -22,3 +21,8 @@ Folders is an array of objects with one key-value pair, where the key is a Folde
   {"Gaming":  [".sqf",".sqm",".ext", ".savegame"]}
 ]}
 ```
+
+FolderLocation should be the path to the folder you want to sort.  
+Folders is an array of objects with one key-value pair, where the key is a Foldername and the value a list of extensions  
+that should be put inside the belonging Folder(name).  
+Beware that double extensions will be sorted to their first occurrence.
