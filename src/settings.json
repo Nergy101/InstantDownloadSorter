@@ -1,10 +1,41 @@
-{"FolderLocation": "C:\\Users\\chris\\Downloads\\",
-"Folders":  [
-  {"Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif"]},
-  {"Documents":  [".md",".pdf",".txt",".docx", ".xlsx", ".pptx"]},
-  {"Audio":  [".mid",".wav",".mp3", ".ogg"]},
-  {"Programming":  [".html", ".css", ".js", ".cs", ".java", ".py"]},
-  {"Executables": [".exe",".msi",".apk",".iso"]},
-  {"Compressed": [".zip",".gz",".7z",".rar"]},
-  {"Gaming":  [".sqf",".sqm",".ext", ".savegame"]}
-]}
+{
+  "FolderLocation": "C:\\Users\\{user_name}\\Downloads\\",
+  "Folders": [
+    { "Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif", ".svg"] },
+    { "Documents": [".md", ".pdf", ".txt", ".docx", ".xlsx", ".pptx"] },
+    { "Audio": [".mid", ".wav", ".mp3", ".ogg"] },
+    { "Video": [".mp4"] },
+    {
+      "Programming": [
+        ".html",
+        ".css",
+        ".js",
+        ".cs",
+        ".java",
+        ".py",
+        ".sql",
+        ".coverage",
+        ".graphql",
+        ".dll"
+      ]
+    },
+    { "Executables": [".exe", ".msi", ".apk", ".iso", ".vsix"] },
+    { "Compressed": [".zip", ".gz", ".7z", ".rar", ".tgz"] },
+    { "Gaming": [".sqf", ".sqm", ".ext", ".savegame"] },
+    {
+      "Work": [
+        ".pro",
+        ".boz",
+        ".pu2",
+        ".pu",
+        ".bak",
+        ".log",
+        ".pfx",
+        ".pem",
+        ".crt",
+        ".key",
+        ".asc"
+      ]
+    }
+  ]
+}
