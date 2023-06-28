@@ -2,9 +2,22 @@
 
 Have Python 3 installed and available in PATH as either `py` or `python`.  
 go inside CMD at `/src` and:  
-- run `InstantSorter.py` with python  
+- run `InstantSorter.py` with python.
+
+## Make / Shell
+
+install make with Choco on windows (requires privileges):
+`choco install make`
+
+then run
+
+`make run` in 'InstantDownloadSorter'-folder.
+See the [Makefile](Makefile) file
 
 `settings.json` should have a valid configuration.
+
+You can also run `run.sh`.
+See the [run.sh](run.sh) file
 
 This is the default for windows:
 
