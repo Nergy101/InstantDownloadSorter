@@ -1,5 +1,5 @@
 {
-  "FolderLocation": "[folder-to-sort]",
+  "FolderLocation": "",
   "Folders": [
     { "Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif", ".svg"] },
     { "Documents": [".md", ".pdf", ".txt", ".docx", ".xls", ".xlsx", ".pptx"] },

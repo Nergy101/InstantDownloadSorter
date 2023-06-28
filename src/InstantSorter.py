@@ -1,5 +1,6 @@
 import os
 import json
+from pathlib import Path
 
 try:
     settings = json.load(open('src/settings.json', 'r'))
@@ -12,7 +13,8 @@ except FileNotFoundError:
         input("Press 'Enter'-key to quit...")
         exit()
 
-path_to_search = settings["FolderLocation"]
+path_to_search = settings["FolderLocation"] or str(
+    os.path.join(Path.home(), "Downloads"))
 folders = settings["Folders"]
 
 print(f"Searching: {path_to_search}")
@@ -21,40 +23,38 @@ if not os.path.exists(path_to_search):
     input("Press Enter to exit...")
     exit()
 
-
-# region create dirs if not yet exists
 for folder_dict in folders:
     folder_name = list(folder_dict.keys())[0]
-    if not os.path.exists(path_to_search+f"{folder_name}\\"):
+    if not os.path.exists(os.path.join(path_to_search, folder_name)):
         print(f"Creating folder {folder_name}")
-        os.makedirs(path_to_search+f"{folder_name}\\")
+        os.makedirs(os.path.join(path_to_search, folder_name))
 
-# endregion
-
-# region relocate files
+all_paths = os.listdir(path_to_search)
 errors = []
 summary = {}
+
 for folder_dict in folders:
     folder_name = list(folder_dict.keys())[0]
     summary[folder_name] = 0
-all_paths = os.listdir(path_to_search)
 
 for path in all_paths:
     try:
         for folder_dict in folders:
             folder_name = list(folder_dict.keys())[0]
             for extension in list(folder_dict.values())[0]:
-                if path.__contains__(extension):
-                    print(f"Relocating '{path}' to " + folder_name + " | " + path_to_search + f"{folder_name}\\{path}")
-                    os.rename(path_to_search + path, path_to_search + f"{folder_name}\\{path}")
+                file_to_move = os.path.join(path_to_search, path)
+                move_to = os.path.join(
+                    path_to_search, os.path.join(folder_name, path))
+
+                if os.path.splitext(path) == extension:
+                    print(f"Relocating '{file_to_move}' to '{move_to}'")
+                    os.rename(file_to_move, move_to)
                     summary[folder_name] = summary[folder_name]+1
 
     except FileNotFoundError as e:
-        errors.append(f"Could not relocate '{path}': {e.strerror}")
+        errors.append(f"Could not relocate '{path}': {e}")
     except FileExistsError:
-        errors.append(f"File already exists at '{path}', deleted")
-        os.remove(path_to_search+""+path)
-    # endregion
+        errors.append(f"File already exists at '{path}', delete the file yourself")
 
 [print(e) for e in errors]
 
