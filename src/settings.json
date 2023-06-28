@@ -1,14 +1,15 @@
 {
-  "FolderLocation": "C:\\Users\\{user_name}\\Downloads\\",
+  "FolderLocation": "[folder-to-sort]",
   "Folders": [
     { "Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif", ".svg"] },
-    { "Documents": [".md", ".pdf", ".txt", ".docx", ".xlsx", ".pptx"] },
+    { "Documents": [".md", ".pdf", ".txt", ".docx", ".xls", ".xlsx", ".pptx"] },
     { "Audio": [".mid", ".wav", ".mp3", ".ogg"] },
-    { "Video": [".mp4"] },
+    { "Video": [".mp4", ".mov"] },
     {
       "Programming": [
         ".html",
         ".css",
+        ".scss",
         ".js",
         ".cs",
         ".java",
@@ -16,7 +17,10 @@
         ".sql",
         ".coverage",
         ".graphql",
-        ".dll"
+        ".dll",
+        ".json",
+        ".xml",
+        ".yml"
       ]
     },
     { "Executables": [".exe", ".msi", ".apk", ".iso", ".vsix"] },

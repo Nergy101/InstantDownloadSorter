@@ -45,12 +45,12 @@ for path in all_paths:
             folder_name = list(folder_dict.keys())[0]
             for extension in list(folder_dict.values())[0]:
                 if path.__contains__(extension):
-                    print(f"Relocating '{path}' to " + f"{folder_name}")
+                    print(f"Relocating '{path}' to " + folder_name + " | " + path_to_search + f"{folder_name}\\{path}")
                     os.rename(path_to_search + path, path_to_search + f"{folder_name}\\{path}")
                     summary[folder_name] = summary[folder_name]+1
 
-    except FileNotFoundError:
-        errors.append(f"Could not relocate '{path}'")
+    except FileNotFoundError as e:
+        errors.append(f"Could not relocate '{path}': {e.strerror}")
     except FileExistsError:
         errors.append(f"File already exists at '{path}', deleted")
         os.remove(path_to_search+""+path)
