@@ -20,7 +20,17 @@
         ".dll",
         ".json",
         ".xml",
-        ".yml"
+        ".yml",
+        ".yaml",
+        ".ts",
+        ".csv",
+        ".md",
+        ".code-profile",
+        ".ini",
+        ".bacpac",
+        ".mdf",
+        ".ldf",
+        ".config"
       ]
     },
     { "Executables": [".exe", ".msi", ".apk", ".iso", ".vsix"] },
@@ -38,7 +48,9 @@
         ".pem",
         ".crt",
         ".key",
-        ".asc"
+        ".pub",
+        ".asc",
+        ".csv"
       ]
     }
   ]
