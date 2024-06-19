@@ -59,28 +59,32 @@ for path in all_paths:
 
 [print(e) for e in errors]
 
+print()
 print("#------------Summary------------#")
+print()
 
 did_something = False
 
 for folder in summary:
     if summary[folder] > 0:
         did_something = True
-        print(f"Relocated {summary[folder]} files to {folder}")
+        print(f"Relocated {summary[folder]} files to {folder}.")
+
+if not did_something:
+    print("There was nothing to relocate.")
 
 for folder in summary:
     dir_to_delete = os.path.join(path_to_search, folder)
     if not os.listdir(dir_to_delete):
         try:
             os.rmdir(dir_to_delete)
-            print(f"Deleted empty folder: {dir_to_delete}")
         except OSError as e:
             print(f"Error: {dir_to_delete} : {e.strerror}")
 
-if not did_something:
-    print("Nothing to relocate")
+print(f"Deleted empty folders.")
 
 print()
 print("#------------Finished-----------#")
 print()
+
 input("Press 'Enter'-key to quit...")
