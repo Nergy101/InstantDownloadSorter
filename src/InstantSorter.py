@@ -45,8 +45,7 @@ for path in all_paths:
                 file_to_move = os.path.join(path_to_search, path)
                 move_to = os.path.join(
                     path_to_search, os.path.join(folder_name, path))
-
-                if os.path.splitext(path) == extension:
+                if os.path.splitext(path)[1] == extension:
                     print(f"Relocating '{file_to_move}' to '{move_to}'")
                     os.rename(file_to_move, move_to)
                     summary[folder_name] = summary[folder_name]+1
@@ -54,7 +53,8 @@ for path in all_paths:
     except FileNotFoundError as e:
         errors.append(f"Could not relocate '{path}': {e}")
     except FileExistsError:
-        errors.append(f"File already exists at '{path}', delete the file yourself")
+        errors.append(f"File already exists at '{
+                      path}', delete the file yourself")
 
 [print(e) for e in errors]
 
