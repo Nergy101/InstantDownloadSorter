@@ -68,8 +68,18 @@ for folder in summary:
         did_something = True
         print(f"Relocated {summary[folder]} files to {folder}")
 
+for folder in summary:
+    dir_to_delete = os.path.join(path_to_search, folder)
+    if not os.listdir(dir_to_delete):
+        try:
+            os.rmdir(dir_to_delete)
+            print(f"Deleted empty folder: {dir_to_delete}")
+        except OSError as e:
+            print(f"Error: {dir_to_delete} : {e.strerror}")
+
 if not did_something:
     print("Nothing to relocate")
+
 print()
 print("#------------Finished-----------#")
 print()
