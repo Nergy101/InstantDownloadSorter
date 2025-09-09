@@ -1,10 +1,43 @@
 {
   "FolderLocation": "",
   "Folders": [
-    { "Pictures": [".jpg", ".JPG", ".jpeg", ".png", ".gif", ".svg"] },
-    { "Documents": [".md", ".pdf", ".txt", ".docx", ".xls", ".xlsx", ".pptx"] },
-    { "Audio": [".mid", ".wav", ".mp3", ".ogg"] },
-    { "Video": [".mp4", ".mov"] },
+    {
+      "Pictures": [
+        ".jpg",
+        ".JPG",
+        ".jpeg",
+        ".png",
+        ".gif",
+        ".svg"
+      ]
+    },
+    {
+      "Documents": [
+        ".md",
+        ".pdf",
+        ".txt",
+        ".docx",
+        ".xls",
+        ".xlsx",
+        ".pptx",
+        ".drawio",
+        ".vsdx"
+      ]
+    },
+    {
+      "Audio": [
+        ".mid",
+        ".wav",
+        ".mp3",
+        ".ogg"
+      ]
+    },
+    {
+      "Video": [
+        ".mp4",
+        ".mov"
+      ]
+    },
     {
       "Programming": [
         ".html",
@@ -33,9 +66,40 @@
         ".config"
       ]
     },
-    { "Executables": [".exe", ".msi", ".apk", ".iso", ".vsix"] },
-    { "Compressed": [".zip", ".gz", ".7z", ".rar", ".tgz"] },
-    { "Gaming": [".sqf", ".sqm", ".ext", ".savegame"] },
+    {
+      "Executables": [
+        ".exe",
+        ".msi",
+        ".apk",
+        ".iso",
+        ".vsix"
+      ]
+    },
+    {
+      "Compressed": [
+        ".zip",
+        ".gz",
+        ".7z",
+        ".rar",
+        ".tgz"
+      ]
+    },
+    {
+      "Gaming": [
+        ".sqf",
+        ".sqm",
+        ".ext",
+        ".savegame"
+      ]
+    },
+    {
+      "Printing": [
+        ".3mf",
+        ".stl",
+        ".obj",
+        ".fbx"
+      ]
+    },
     {
       "Work": [
         ".pro",
