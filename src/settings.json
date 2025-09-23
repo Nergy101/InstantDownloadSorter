@@ -19,8 +19,10 @@
         ".docx",
         ".xls",
         ".xlsx",
+        ".xlsm",
         ".pptx",
         ".drawio",
+        ".excalidraw",
         ".vsdx"
       ]
     },
@@ -63,7 +65,8 @@
         ".bacpac",
         ".mdf",
         ".ldf",
-        ".config"
+        ".config",
+        ".rayconfig"
       ]
     },
     {
