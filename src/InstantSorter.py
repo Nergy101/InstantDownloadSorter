@@ -54,8 +54,7 @@ for path in all_paths:
     except FileNotFoundError as e:
         errors.append(f"Could not relocate '{path}': {e}")
     except FileExistsError:
-        errors.append(f"File already exists at '{
-                      path}', delete the file yourself")
+        errors.append(f"File already exists at '{path}', delete the file yourself")
 
 [print(e) for e in errors]
 
@@ -81,7 +80,7 @@ for folder in summary:
         except OSError as e:
             print(f"Error: {dir_to_delete} : {e.strerror}")
 
-print(f"Deleted empty folders.")
+print("Deleted empty folders.")
 
 print()
 print("#------------Finished-----------#")
