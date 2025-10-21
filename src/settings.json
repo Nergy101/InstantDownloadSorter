@@ -2,6 +2,11 @@
   "FolderLocation": "",
   "Folders": [
     {
+      "Excalidraw": [
+        ".excalidraw"
+      ]
+    },
+    {
       "Pictures": [
         ".jpg",
         ".JPG",
