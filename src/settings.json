@@ -14,7 +14,19 @@
         ".jpeg",
         ".png",
         ".gif",
-        ".svg"
+        ".svg",
+        ".webp",
+        ".avif"
+      ]
+    },
+    {
+      "Books": [
+        ".epub"
+      ]
+    },
+    {
+      "Mails": [
+        ".eml"
       ]
     },
     {
@@ -81,7 +93,9 @@
         ".msi",
         ".apk",
         ".iso",
-        ".vsix"
+        ".vsix",
+        ".app",
+        ".dmg"
       ]
     },
     {
