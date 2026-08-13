@@ -1,5 +1,22 @@
 # How to run
 
+## Screenshots
+
+![Main view](screenshots/main.png)
+
+The main screen: the **Files** panel (left) lists everything in your folder with
+its detected target folder, and the **Plan** panel (right) groups the files by
+where they'll be sorted to.
+
+![Confirm sort](screenshots/confirm-sort.png)
+
+Pressing `s` first shows a confirmation of the moves — nothing is overwritten
+and nothing moves until you confirm.
+
+![Sort complete](screenshots/sort-results.png)
+
+After you confirm, a summary reports how many files went into each folder.
+
 Have Python 3 installed and available in PATH as either `py` or `python`.  
 go inside CMD at `/src` and:  
 - run `InstantSorter.py` with python.

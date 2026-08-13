@@ -16,7 +16,8 @@
         ".gif",
         ".svg",
         ".webp",
-        ".avif"
+        ".avif",
+        ".HEIC"
       ]
     },
     {
