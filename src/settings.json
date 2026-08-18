@@ -10,38 +10,68 @@
     {
       "Pictures": [
         ".jpg",
-        ".JPG",
         ".jpeg",
         ".png",
         ".gif",
         ".svg",
         ".webp",
         ".avif",
-        ".HEIC"
+        ".heic",
+        ".bmp",
+        ".tiff",
+        ".tif",
+        ".heif",
+        ".raw",
+        ".nef",
+        ".cr2",
+        ".arw",
+        ".ico",
+        ".jfif",
+        ".psd",
+        ".pbm",
+        ".pgm",
+        ".ppm"
       ]
     },
     {
       "Books": [
-        ".epub"
+        ".epub",
+        ".mobi",
+        ".azw",
+        ".azw3",
+        ".djvu",
+        ".cbz",
+        ".cbr",
+        ".chm"
       ]
     },
     {
       "Mails": [
-        ".eml"
+        ".eml",
+        ".msg",
+        ".mbox",
+        ".pst",
+        ".ost"
       ]
     },
     {
       "Documents": [
-        ".md",
         ".pdf",
         ".txt",
         ".docx",
+        ".doc",
+        ".rtf",
+        ".odt",
+        ".ods",
+        ".odp",
+        ".pages",
+        ".numbers",
+        ".tex",
         ".xls",
         ".xlsx",
         ".xlsm",
         ".pptx",
         ".drawio",
-        ".excalidraw",
         ".vsdx"
       ]
     },
@@ -50,13 +80,36 @@
         ".mid",
         ".wav",
         ".mp3",
-        ".ogg"
+        ".ogg",
+        ".flac",
+        ".aac",
+        ".m4a",
+        ".opus",
+        ".wma",
+        ".aiff",
+        ".alac",
+        ".mka",
+        ".ac3",
+        ".ape",
+        ".amr",
+        ".cda"
       ]
     },
     {
       "Video": [
         ".mp4",
-        ".mov"
+        ".mov",
+        ".mkv",
+        ".avi",
+        ".webm",
+        ".m4v",
+        ".flv",
+        ".wmv",
+        ".mpeg",
+        ".mpg",
+        ".m2ts",
+        ".3gp",
+        ".ogv"
       ]
     },
     {
@@ -65,9 +118,43 @@
         ".css",
         ".scss",
         ".js",
+        ".cjs",
+        ".mjs",
+        ".jsx",
+        ".ts",
+        ".tsx",
+        ".vue",
+        ".svelte",
         ".cs",
         ".java",
         ".py",
+        ".rb",
+        ".php",
+        ".go",
+        ".rs",
+        ".swift",
+        ".kt",
+        ".kts",
+        ".m",
+        ".mm",
+        ".h",
+        ".c",
+        ".cpp",
+        ".hpp",
+        ".cc",
+        ".cxx",
+        ".sh",
+        ".bash",
+        ".zsh",
+        ".bat",
+        ".cmd",
+        ".ps1",
+        ".lua",
+        ".dart",
+        ".r",
+        ".pl",
+        ".pm",
+        ".ipynb",
         ".sql",
         ".coverage",
         ".graphql",
@@ -76,7 +163,7 @@
         ".xml",
         ".yml",
         ".yaml",
-        ".ts",
+        ".toml",
         ".csv",
         ".md",
         ".code-profile",
@@ -96,7 +183,13 @@
         ".iso",
         ".vsix",
         ".app",
-        ".dmg"
+        ".dmg",
+        ".deb",
+        ".rpm",
+        ".pkg",
+        ".jar",
+        ".appimage",
+        ".elf"
       ]
     },
     {
@@ -105,7 +198,15 @@
         ".gz",
         ".7z",
         ".rar",
-        ".tgz"
+        ".tgz",
+        ".tar",
+        ".bz2",
+        ".xz",
+        ".zst",
+        ".lz4",
+        ".lzma",
+        ".cab",
+        ".zipx"
       ]
     },
     {
@@ -113,7 +214,15 @@
         ".sqf",
         ".sqm",
         ".ext",
-        ".savegame"
+        ".savegame",
+        ".sav",
+        ".state",
+        ".rom",
+        ".gb",
+        ".gba",
+        ".nes",
+        ".sfc",
+        ".nds"
       ]
     },
     {
@@ -121,7 +230,21 @@
         ".3mf",
         ".stl",
         ".obj",
-        ".fbx"
+        ".fbx",
+        ".step",
+        ".stp",
+        ".iges",
+        ".igs",
+        ".dwg",
+        ".dxf",
+        ".blend",
+        ".ply",
+        ".gltf",
+        ".glb",
+        ".usdz",
+        ".skp",
+        ".sldprt",
+        ".sldasm"
       ]
     },
     {
@@ -138,7 +261,23 @@
         ".key",
         ".pub",
         ".asc",
-        ".csv"
+        ".p12",
+        ".cer",
+        ".der",
+        ".jks",
+        ".keystore",
+        ".p8",
+        ".p7b",
+        ".p7c",
+        ".properties",
+        ".env",
+        ".tfstate",
+        ".tfvars",
+        ".hcl",
+        ".lic",
+        ".license",
+        ".entitlements",
+        ".mobileprovision"
       ]
     }
   ]
