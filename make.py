@@ -13,11 +13,13 @@ import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SORTER = os.path.join(ROOT, "src", "InstantSorter.py")
+SORT_ONCE = os.path.join(ROOT, "src", "sort_once.py")
 REQUIREMENTS = os.path.join(ROOT, "requirements.txt")
 
 TARGETS = {
     "help": "Show this help",
-    "run": "Run the sorter",
+    "run": "Run the sorter (interactive TUI)",
+    "sort": "Sort now, non-interactively (no TUI)",
     "install": "Install dependencies (windows-curses on Windows; requirements.txt if present)",
 }
 
@@ -51,6 +53,9 @@ def main():
         return 0
     if cmd == "run":
         os.execv(sys.executable, [sys.executable, SORTER])
+        return 0  # not reached
+    if cmd == "sort":
+        os.execv(sys.executable, [sys.executable, SORT_ONCE])
         return 0  # not reached
     if cmd == "install":
         return install()

@@ -16,8 +16,11 @@
 help: ## Show this help
 	@python3 make.py help || py make.py help || python make.py help
 
-run: ## Run the sorter
+run: ## Run the sorter (interactive TUI)
 	@python3 make.py run || py make.py run || python make.py run
+
+sort: ## Sort now, non-interactively (no TUI)
+	@python3 make.py sort || py make.py sort || python make.py sort
 
 install: ## Install dependencies (windows-curses on Windows; requirements.txt if present)
 	@python3 make.py install || py make.py install || python make.py install
